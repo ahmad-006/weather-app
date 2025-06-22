@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER WEBSITE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <h4>by Ahmad Aamir</h4>
+    </header>
+    <section class="container">
+      <header class="search">
+        <form class="search_space">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Enter City Name"
+            spellcheck="true"
+            class="citySearch"
+            autofocus
+          />
+        </form>
+
+        <button class="btnSearch">Search</button>
+      </header>
+      <section class="weather_data">
+        <div class="data_main">
+          <h1 class="city_name"></h1>
+          <p class="city_date_time">tuesday, july, 23:10:15pm</p>
+          <div class="weather-icons-section">
+            <p class="weather_forecast"></p>
+            <div class="weather_icon"></div>
+          </div>
+          <p class="weather_temperature"></p>
+          <div class="temperature_minmax">
+            <p class="temperature_min"></p>
+            <p class="temperature_max"></p>
+          </div>
+        </div>
+      </section>
+      <footer class="extra-data">
+        <div class="row-1">
+          <div class="card">
+            <i class="fa-solid fa-temperature-three-quarters card-icon"></i>
+            <div class="feels-like-text">
+              <p class="feels-like-para">Feels-like</p>
+              <p class="feels-like-value"></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-wind card-icon"></i>
+            <div class="wind-text">
+              <p class="wind-para">Wind</p>
+              <p class="wind-value"></p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-droplet card-icon"></i>
+            <div class="humidity-text">
+              <p class="humidity-para">Humidity</p>
+              <p class="humidity-value"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="card">
+            <i class="fas fa-tachometer-alt card-icon"></i>
+            <div class="pressure-text">
+              <p class="pressure-para">Pressure</p>
+              <p class="pressure-value"></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-cloud-sun card-icon"></i>
+            <div class="sun-rise-text">
+              <p class="sun-rise-para">Sun rise</p>
+              <p class="sun-rise-value"></p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fas fa-sun card-icon" style="color: orange"></i>
+            <div class="sun-set-text">
+              <p class="sun-set-para">Sun set</p>
+              <p class="sun-set-value"></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>
